@@ -307,13 +307,13 @@ export default function DecorativeFlower({ type = 'rose', windLevel = 1, bloomin
   }, [windLevel, vase, baseRotation]);
 
   const sizeConfig = vase
-    ? { width: 32, height: 50 }
+    ? { width: 4, height: 6 }
     : { width: size, height: size * 1.1 };
 
   return (
     <div
       className="relative flex items-end justify-center overflow-visible select-none transition-all duration-500"
-      style={{ width: `${sizeConfig.width}px`, height: `${sizeConfig.height}px` }}
+      style={{ width: `${sizeConfig.width}vw`, height: `${sizeConfig.height}vw` }}
     >
       <div
         ref={wrapperRef}
@@ -322,7 +322,7 @@ export default function DecorativeFlower({ type = 'rose', windLevel = 1, bloomin
       >
         <div
           className="w-full h-full"
-          style={{ width: `${sizeConfig.width}px`, height: `${sizeConfig.height}px` }}
+          style={{ width: `${sizeConfig.width}vw`, height: `${sizeConfig.height}vw` }}
           dangerouslySetInnerHTML={{ __html: FLOWER_SVGS[type] || FLOWER_SVGS.rose }}
         />
         {blooming && (

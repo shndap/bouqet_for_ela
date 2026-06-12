@@ -44,7 +44,7 @@ export default function LettersPage() {
           return z0 * std + mean;
         };
 
-        const flowerSizes = [35, 38, 41, 44, 47, 50, 53];
+        const flowerSizes = [10, 11, 12, 13, 14, 15, 16];
         const initialFlowers = json.flowers.map((letter, idx) => ({
           ...letter,
           type: letter.type || getRandomItem(FLOWER_TYPES),
@@ -208,12 +208,12 @@ export default function LettersPage() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] via-[#1a261a] to-[#0f150f]" />
 
       {/* Grass at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-40">
+      {/* <div className="absolute bottom-0 left-0 right-0 h-40">
         <svg viewBox="0 0 1200 100" className="w-full h-full" preserveAspectRatio="none">
           <path d="M0,100 Q50,60 100,80 T200,70 T300,85 T400,65 T500,90 T600,70 T700,85 T800,60 T900,80 T1000,70 T1100,85 T1200,75 L1200,100 Z" fill="#1a3a1a" opacity="0.6"/>
           <path d="M0,100 Q30,70 80,85 T180,75 T280,90 T380,65 T480,85 T580,70 T680,90 T780,60 T880,80 T980,70 T1080,90 T1180,70 L1200,80 L1200,100 Z" fill="#0f250f" opacity="0.8"/>
         </svg>
-      </div>
+      </div> */}
 
       <header className="relative z-20 text-center pt-6 pb-2">
         <h1 className="text-3xl md:text-4xl font-light tracking-wide italic text-[#e2dfda]/80">{data.title}</h1>
@@ -230,7 +230,7 @@ export default function LettersPage() {
                 ref={el => flowerRefs.current[flower.key] = el}
                 className={`absolute cursor-pointer transition-all duration-300 ${burstingIds.has(flower.key) ? 'plucked-fade' : ''}`}
                 style={{
-                  left: `calc(50% + ${(flower.key - flowers.length / 2) * 250}px)`,
+                  left: `calc(50% + ${(flower.key - flowers.length / 2) * 15}vw)`,
                   transform: `rotate(${flower.initialRotation}deg)`,
                   transformOrigin: '50% 100%',
                   zIndex: flower.zIndex,
@@ -246,7 +246,7 @@ export default function LettersPage() {
                   blooming={flower.blooming}
                   garden
                   baseRotation={flower.initialRotation}
-                  size={flower.size * 12}
+                  size={flower.size*4}
                 />
               </div>
             ))}
