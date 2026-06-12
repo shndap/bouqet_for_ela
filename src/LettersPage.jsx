@@ -29,8 +29,13 @@ export default function LettersPage() {
   const [showFinalLetter, setShowFinalLetter] = useState(false);
 
   useEffect(() => {
-    fetch('/letters.json')
-      .then(res => res.json())
+    fetch(`${import.meta.env.BASE_URL}letters.json`)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`Failed to load letters.json: ${res.status} ${res.statusText}`);
+        }
+        return res.json();
+      })
       .then(json => {
         setData(json);
         const gaussianRandom = (mean = 0, std = 7) => {
