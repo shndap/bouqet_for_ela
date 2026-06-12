@@ -313,7 +313,7 @@ export default function DecorativeFlower({ type = 'rose', windLevel = 1, bloomin
   return (
     <div
       className="relative flex items-end justify-center overflow-visible select-none transition-all duration-500"
-      style={{ width: `${sizeConfig.width}vw`, height: `${sizeConfig.height}vw` }}
+      style={{ width: `min(${sizeConfig.width}vw, 70vh)`, height: `min(${sizeConfig.height}vw, 70vh)` }}
     >
       <div
         ref={wrapperRef}
@@ -322,7 +322,7 @@ export default function DecorativeFlower({ type = 'rose', windLevel = 1, bloomin
       >
         <div
           className="w-full h-full"
-          style={{ width: `${sizeConfig.width}vw`, height: `${sizeConfig.height}vw` }}
+          style={{ width: `min(${sizeConfig.width}vw, 70vh)`, height: `min(${sizeConfig.height}vw, 70vh)` }}
           dangerouslySetInnerHTML={{ __html: FLOWER_SVGS[type] || FLOWER_SVGS.rose }}
         />
         {blooming && (

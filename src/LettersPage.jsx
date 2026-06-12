@@ -38,7 +38,7 @@ export default function LettersPage() {
       })
       .then(json => {
         setData(json);
-        const gaussianRandom = (mean = 0, std = 7) => {
+        const gaussianRandom = (mean = 0, std = 8) => {
           let u1 = 0, u2 = 0;
 
           while (u1 === 0) u1 = Math.random();
@@ -59,7 +59,7 @@ export default function LettersPage() {
           size: flowerSizes[idx % flowerSizes.length],
           zIndex: 10 + idx,
           delay: 0,
-          initialRotation: gaussianRandom()
+          initialRotation: Math.random() * 40 - 20
         }));
         setFlowers(initialFlowers);
       });
@@ -227,7 +227,7 @@ export default function LettersPage() {
 
       <main className="relative z-20 h-[calc(100vh-100px)] flex flex-col items-center justify-end pb-4">
         {/* Flowers Garden - all aligned at bottom */}
-        <div className="relative w-full flex justify-center" style={{ height: '85vh' }}>
+        <div className="relative w-full flex justify-center" style={{ height: '70vh', maxHeight: '70vh' }}>
           <div className="absolute bottom-0 left-0 right-0 flex justify-center items-end">
 {flowers.map(flower => (
               <div
