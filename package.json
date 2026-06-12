@@ -3,13 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://shndap.github.io/bouqet_for_ela",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "@types/react-dom": "^19.2.3",
+    "gh-pages": "^6.3.0",
     "typescript": "~6.0.2",
     "vite": "^8.0.12"
   },
