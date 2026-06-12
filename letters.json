@@ -1,0 +1,166 @@
+{
+    "title": "The Bouquet I Made For You",
+    "flowers": [
+        {
+            "id": "rose_1",
+            "type": "rose",
+            "title": "The Bookstore",
+            "content": [
+                "The story started in Tehran. Not with a grand romantic moment. Not with fireworks. Not with fate announcing itself.",
+                "In a bookstore.",
+                "You took a photo of me. Then you sent it to me.",
+                "At the time, I thought: 'She seems warm. She seems friendly.'",
+                "Meanwhile you apparently thought I was gay.",
+                "A surprisingly strong foundation for a relationship.",
+                "A bookstore became the first chapter. Maybe that is why books keep appearing in our story."
+            ]
+        },
+        {
+            "id": "tulip_1",
+            "type": "tulip",
+            "title": "Who You Are",
+            "content": [
+                "You are kind. You are funny. You are beautiful. You are brave.",
+                "When something matters to you, you fight for it. You fight for your rights. You refuse to disappear quietly.",
+                "One of the things I admire most is that you keep moving forward. Even when life becomes difficult. Even when the future feels uncertain.",
+                "Recently you started taking barista classes. Recently you started taking IELTS classes. You are actively building a future for yourself.",
+                "Not because the road is easy. Because you keep going anyway."
+            ]
+        },
+        {
+            "id": "daisy_1",
+            "type": "daisy",
+            "title": "The Tiny Things",
+            "content": [
+                "One of the most important memories is not a trip. Not a milestone. Not a dramatic event.",
+                "It is when you send me videos of yourself taking your medication.",
+                "To most people this would seem insignificant.",
+                "To me it means: You are here. You are okay. You are taking care of yourself.",
+                "And somehow that matters more than I can explain."
+            ]
+        },
+        {
+            "id": "sunflower_1",
+            "type": "sunflower",
+            "title": "What We Survived",
+            "content": [
+                "A terrible fight. One that hurt. One that tested us.",
+                "One that reminded us that loving someone is not the same thing as understanding them.",
+                "And yet we stayed. And we worked through it. And we kept choosing each other.",
+                "We also survived two wars. Not metaphorically. Actual wars.",
+                "Because surviving difficult times together changed the way we think about life. It made ordinary moments matter more.",
+                "A coffee. A walk. A hand held on a boat. A conversation. A future. These things became precious."
+            ]
+        },
+        {
+            "id": "lavender_1",
+            "type": "lavender",
+            "title": "The Cat Museum",
+            "content": [
+                "Two cat lovers doing exactly what two cat lovers would do.",
+                "A memory that feels almost inevitable. Two cats visiting cats.",
+                "This is who we are."
+            ]
+        },
+        {
+            "id": "lily_1",
+            "type": "lily",
+            "title": "The Boat Trip",
+            "content": [
+                "The thing I remember most is not the destination. Not the water. Not the scenery. Not the photographs.",
+                "Holding your hand.",
+                "That is the memory that survived."
+            ]
+        },
+        {
+            "id": "rose_2",
+            "type": "rose",
+            "title": "The Escape Room",
+            "content": [
+                "You got scared.",
+                "I probably enjoyed this more than I should have.",
+                "A memory filled with laughter.",
+                "The kind of moment I want to remember forever."
+            ]
+        },
+        {
+            "id": "tulip_2",
+            "type": "tulip",
+            "title": "Valentine's Day Cigars",
+            "content": [
+                "An unusual Valentine's Day. Not flowers. Not cliches.",
+                "Cigars.",
+                "A memory that somehow feels perfectly us."
+            ]
+        },
+        {
+            "id": "lily_2",
+            "type": "lily",
+            "title": "The Fight",
+            "content": [
+                "One of the hardest moments was a fight that forced us to ask uncomfortable questions.",
+                "Why do we love each other? What are we holding onto? What are we afraid of losing?",
+                "We learned that love can come from different places. Sometimes love comes from fear.",
+                "But we also discovered something else. There is another kind of love. A quieter kind. A healthier kind.",
+                "The kind that says: 'I want you to become who you are meant to become.' Not because I need you. But because your happiness genuinely matters to me."
+            ]
+        },
+        {
+            "id": "sunflower_2",
+            "type": "sunflower",
+            "title": "Your Dreams",
+            "content": [
+                "You dream of opening a bookstore. Becoming a therapist. Helping people. Building something meaningful.",
+                "These dreams are not just words. They are who you are becoming.",
+                "I watch you work toward them every day. That takes courage. That takes hope.",
+                "I believe in those dreams. I believe in you."
+            ]
+        },
+        {
+            "id": "lavender_2",
+            "type": "lavender",
+            "title": "The Old Cats",
+            "content": [
+                "One of my favorite thoughts: Many years from now.",
+                "An old sofa. Music playing. A room filled with books. Evening light coming through the window.",
+                "You and me, sitting together. Older. A little slower. Still talking. Still laughing.",
+                "Still sharing cigarettes. Still surviving the world together.",
+                "Not because life became perfect. Because we stayed. Because we built something worth staying for."
+            ]
+        },
+        {
+            "id": "lily_3",
+            "type": "lily",
+            "title": "The Most Important Line",
+            "content": [
+                "Thanks for making your arms a safe place for me to put down my guard.",
+                "Everything else in our story grows around this sentence.",
+                "This sentence is home. This sentence is trust. This sentence is peace.",
+                "This sentence is the reason I am writing this."
+            ]
+        }
+    ],
+    "finalLetter": {
+        "title": "The Bouquet",
+        "content": [
+            "This bouquet is a collection of moments. Some big. Some small. All ours.",
+            "Each flower is a letter. Each letter is a piece of our story.",
+            "The bookstore where it started. The cat museum where we did what cat lovers do. The boat where I held your hand. The escape room where you got scared and I laughed. The cigars on Valentine's Day.",
+            "The fight that taught us love is a choice. The wars we survived. The tiny video of you taking your medication that somehow means everything.",
+            "Your dreams. My dreams. Our dreams of a quieter life, built together.",
+            "The old cats we will become, sitting on a sofa full of books, listening to music, still talking, still laughing.",
+            "Everything grows around one sentence: Thanks for making your arms a safe place for me to put down my guard.",
+            "This website is not a celebration of dependency. It is a celebration of admiration. It is a reminder that I am proud of who you are becoming.",
+            "I hope you keep becoming that person.",
+            "Whether the road is easy or difficult.",
+            "And when I imagine the future, Ela, you are already there.",
+            "That is what love looks like.",
+            "This bouquet is my love letter to you. To us. To the story we are writing together.",
+            "Every flower is a chapter. Every petal is a moment. Every stem is a promise.",
+            "I love you.",
+            "June 12, 2026",
+            "With all my love, Sahand",
+            "To Ela, my Nini."
+        ]
+    }
+}
