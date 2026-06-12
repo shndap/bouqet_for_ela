@@ -27,6 +27,15 @@ export default function LettersPage() {
   const petalIdRef = useRef(0);
   const [cascadeStyles, setCascadeStyles] = useState([]);
   const [showFinalLetter, setShowFinalLetter] = useState(false);
+  const [showEasterEgg, setShowEasterEgg] = useState(false);
+  const [titleClickCount, setTitleClickCount] = useState(0);
+
+  useEffect(() => {
+    if (titleClickCount >= 5) {
+      setShowEasterEgg(true);
+      setTitleClickCount(0);
+    }
+  }, [titleClickCount]);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}letters.json`)
@@ -221,7 +230,13 @@ export default function LettersPage() {
       </div> */}
 
       <header className="relative z-20 text-center pt-6 pb-2">
-        <h1 className="text-3xl md:text-4xl font-light tracking-wide italic text-[#e2dfda]/80">{data.title}</h1>
+        <h1
+          className="text-3xl md:text-4xl font-light tracking-wide italic text-[#e2dfda]/80 cursor-pointer select-none"
+          onClick={() => setTitleClickCount(prev => prev + 1)}
+          title="Try clicking me"
+        >
+          {data.title}
+        </h1>
         <p className="text-[10px] text-[#a8a29e]/60 mt-1 uppercase tracking-[0.2em]">Click a flower to read its letter</p>
       </header>
 
@@ -267,6 +282,28 @@ export default function LettersPage() {
               {data.finalLetter.content.map((p, idx) => (
                 <p key={idx}>{p}</p>
               ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showEasterEgg && (
+        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-6">
+          <div className="relative bg-[#121212] rounded-3xl shadow-2xl border border-white/10 overflow-hidden max-w-3xl w-full">
+            <button
+              className="absolute right-4 top-4 text-white/70 hover:text-white"
+              onClick={() => setShowEasterEgg(false)}
+            >
+              Close
+            </button>
+            <div className="p-6 pt-16 text-center text-white">
+              <h2 className="text-3xl font-semibold mb-4">Easter Egg</h2>
+              <p className="text-sm text-[#d1d5db] mb-6">Have some Doogh Ab-ali!!</p>
+              <img
+                src={`${import.meta.env.BASE_URL}easter.png`}
+                alt="Easter"
+                className="mx-auto max-h-[70vh] w-auto rounded-2xl border border-white/10 shadow-xl"
+              />
             </div>
           </div>
         </div>
